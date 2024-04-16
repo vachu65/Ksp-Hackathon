@@ -1,0 +1,253 @@
+.grad
+{
+    background-color:white;
+    color:black;
+    margin-top: 0px;
+    margin-left: 0px;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+*/
+}
+
+
+.g{
+    
+    background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+    color:black;
+    font-size:30px;
+}
+
+nav {
+    background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+    padding: 20px 40px; /* Adjusted padding for better alignment and size */
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: space-around;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Adds space between items */
+    position: relative;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+nav ul li {
+    margin-right: 10px;
+    margin-top: 0px;
+    padding-right: 0px;
+    align-items:center;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+nav .nav-select {
+    height: 30px; /* Reduced height for select elements */
+    padding: 0 5px; /* Adjust padding to make select elements look better */
+}
+
+
+.menu-bar {
+    cursor: pointer;
+    margin-right: 20px; /* Adjust as needed */
+    font-size: 24px; /* Adjust as needed */
+    user-select: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Styles for dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+#aa{
+    display: inline-block;
+    position: absolute;
+    left:0px;
+    top: 20px;
+    font-size: 40px;
+    padding-left: 6%;
+    margin-top: -3.4% !important;
+    transition: opacity 0.3s ease;
+
+}
+
+#aa:hover {
+    opacity: 0.7;
+}
+
+#ac
+{
+    text-align:right;
+}
+
+#ad
+{
+    text-align:right;
+}
+
+.photo
+{
+    width:100%;
+}
+
+.pop
+{
+    position:absolute;
+    left:10px;
+    color:white;
+    font-size:20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+  #bu
+  {
+    position:absolute;
+    left:1300px;
+    top:30px;
+    font-size:5px;
+    float:right;
+  }
+
+
+  #ba
+  {
+    text-align: right;
+    margin-right: 50px;
+
+  }
+
+  
+
+
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .about .about-img {
+    position: relative;
+  }
+  
+  .about .about-img .aboutHero {
+    width: 40vw;
+    height: auto;
+  }
+  
+  .about-img .ring {
+    position: absolute;
+    top: 22%;
+    right: 1%;
+  }
+  
+  .about-img .circle {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  
+  
+  .about-content {
+    padding: 3rem 0;
+  }
+  
+  .about-content h2 {
+    color: var(--main-color);
+  }
+  
+  .about-content h3 {
+    font-size: 2.1rem;
+    line-height: 3rem;
+    margin: .5rem 0;
+  }
+  
+  .about-content p {
+    color: var(--font-color);
+  }
+  
+  .text-box p {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .about-btn {
+    margin: .8rem 0;
+  }
+  
+  .about-btn button,
+  .cvContent a {
+    background: var(--gradient-white-bg2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    box-shadow: rgba(60, 64, 67, 0.3)0px 1px 2px 0,
+      rgba(60, 64, 67, 0.15)0px 2px 6px 2px;
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: all .1s ease;
+  }
+  
+  
+  .about-btn button.active {
+    background: var(--gradient-color-bg2);
+    color: #ffff;
+  }
+  
+  .text-box {
+    margin: .8rem 0;
+  }
+  
+  .content-btn>.content:not(:first-child) {
+    display: none;
+  }
+  
+  .about-btn button:hover {
+    box-shadow: var(--hover-box-shadow);
+  }
+  
+  .cvContent {
+    margin-top: 1.5rem;
+  }

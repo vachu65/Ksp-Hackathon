@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Karnataka State Police</title>
+    <link rel="icon" type="image1x-icon" href="favicon.png.ico">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'><link rel="stylesheet" href="./style3.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+    <style>
+       
+
+     
+       .card3 {
+            margin-top: 20px;
+            border-radius: 20px; /* Curved edges */
+            width: 22rem; /* Adjusted smaller width */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for attractiveness */
+            position: relative; /* Needed for positioning the pseudo-element */
+            overflow: hidden; /* Ensures the gradient line adheres to the rounded corner */
+            height: 140px; /* Decreased height */
+        }
+
+        .card-content3 {
+            flex: 1;
+            display: flex;
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+        }
+
+        .card3::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px; /* Thickness of the gradient line */
+            background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+            border-top-left-radius: 20px; /* Rounded corner */
+            border-top-right-radius: 20px; /* Rounded corner */
+        }
+
+        .card-body3 {
+            padding: 15px; /* Adjusted padding */
+            display: flex; /* Enables flexbox */
+            align-items: center; /* Vertically centers the flex items */
+            justify-content: space-between; /* Space between text and image */
+        }
+
+        .card3 img {
+            width: 70px; /* Adjusted size */
+            height: 70px; /* Adjusted size */
+        }
+
+        .card-text3 {
+            font-size:25px; /* Increased font size */
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Adjust text alignment as needed */
+        }  
+        
+        
+        .card-link3 {
+    color: inherit; /* Prevents the link from changing text color */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.card-link3:hover {
+    text-decoration: none; /* Keeps the link without underline on hover */
+}
+
+       .card-slider {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.card-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    min-width: 300px; /* Adjust card size as needed */
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust based on content */
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Adjust this as needed, e.g., flex-start, flex-end */
+}
+
+.logo-image {
+  width: 30%;
+  margin-left:90px;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  margin-right:70px;
+  
+}
+
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container1 {
+  padding: 2px 16px;
+  
+  
+}
+
+.container1 h4, .container1 p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.container1 h4 {
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.container1 p {
+  font-size: 18px; /* Adjust the size as needed */
+}
+
+
+        /* Existing .sidenav and related styles */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style for the Menu Icon */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: white; /* Adjust color as needed */
+    padding: 10px;
+    
+}
+
+/* Main content styling - ensure it's below the nav */
+#main {
+    margin-top: 60px; /* Adjust based on your nav's height */
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 20px; /* Adjust based on your needs */
+    background-color: #333; /* Example background color */
+    color: white;
+    height:60px;
+    width: 100%;
+    top: 0;
+    z-index: 2; /* Ensure nav is above the sidenav */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    
+    margin-right: 20px; /* Adjust the right margin for horizontal spacing */
+    padding: 10px 0; /* Adjust based on your needs */
+}
+
+ul li a, ul li select {
+    color: white; /* Adjust based on your theme */
+    text-decoration: none;
+}
+
+.navbar-logo {
+    height: 70px; /* Adjust the height as needed */
+    margin-left: auto; /* Adds some space between the logo and the menu icon */
+    width:auto;
+
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns the logo to the right */
+    flex-grow: 1;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+
+  background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+  color: white;
+  padding: 16px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  width: 100%; /* Full-width */
+  text-align: left; /* Align text */
+}
+
+/* Dropdown container */
+.dropdown-container {
+    display: block;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    background: linear-gradient(to right, #0033cc 10%, #993399 60%);
+    padding-left: 20px;
+    
+}
+
+.dropdown-content a
+{
+    font-size:22px;
+    display: block; /* Ensure the anchor tags behave as block elements */
+    padding: 12px 0; /* Add some padding for better readability */
+    text-decoration: none; 
+}
+
+.dropdown-container:first-child {
+    border-top: 2px solid #ddd;
+}
+
+/* Show the dropdown content on hover */
+.dropdown-container:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+}
+
+/* Show the dropdown content on hover */
+.dropdown-container:hover .dropdown-content {
+    display: block;
+}
+
+/* Add a border to separate individual links if desired */
+.dropdown-content a:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Add a bottom border to all links except the last one */
+}
+
+/* Style the dropdown button */
+.dropbtn1 {
+background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+color: white;
+padding: 16px;
+font-size: 25px;
+border: none;
+cursor: pointer;
+width: 100%; /* Full-width */
+text-align: left; /* Align text */
+}
+
+/* Dropdown container */
+.dropdown-container1 {
+  display: block;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content1 {
+  display: none;
+  background: linear-gradient(to right, #0033cc 10%, #993399 60%);
+  padding-left: 20px;
+}
+
+.dropdown-content1 a
+{
+    font-size:22px;
+}
+
+.dropdown-container1:first-child {
+    border-top: 2px solid #ddd;
+}
+
+/* Show the dropdown content on hover */
+
+
+.dropdown-content1 a:hover {
+    background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+}
+
+
+
+/* Add a border to separate individual links if desired */
+.dropdown-content1 a:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Add a bottom border to all links except the last one */
+}
+
+/* Show the dropdown content on hover */
+.dropdown-container1:hover .dropdown-content1 {
+  display: block
+}
+
+.dropbtn2 {
+background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+color: white;
+padding: 16px;
+font-size: 25px;
+border: none;
+cursor: pointer;
+width: 100%; /* Full-width */
+text-align: left; /* Align text */
+}
+
+/* Dropdown container */
+.dropdown-container2 {
+  display: block;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content2 {
+  display: none;
+  background: linear-gradient(to right, #0033cc 10%, #993399 60%);
+  padding-left: 20px;
+}
+
+.dropdown-container2:first-child {
+    border-top: 2px solid #ddd;
+}
+
+/* Show the dropdown content on hover */
+
+
+.dropdown-content2 a:hover {
+    background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+}
+
+
+
+/* Add a border to separate individual links if desired */
+.dropdown-content2 a:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Add a bottom border to all links except the last one */
+}
+
+
+
+/* Show the dropdown content on hover */
+.dropdown-container2:hover .dropdown-content2 {
+  display: block
+}
+
+
+.dropbtn3 {
+background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+color: white;
+padding: 16px;
+font-size: 25px;
+border: none;
+cursor: pointer;
+width: 100%; /* Full-width */
+text-align: left; /* Align text */
+}
+
+/* Dropdown container */
+.dropdown-container3 {
+  display: block;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content3 {
+  display: none;
+  background: linear-gradient(to right, #0033cc 10%, #993399 60%);
+  padding-left: 20px;
+}
+
+.dropdown-container3:first-child {
+    border-top: 2px solid #ddd;
+}
+
+/* Show the dropdown content on hover */
+
+
+.dropdown-content3 a:hover {
+    background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+}
+
+
+
+/* Add a border to separate individual links if desired */
+.dropdown-content3 a:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Add a bottom border to all links except the last one */
+}
+
+/* Show the dropdown content on hover */
+.dropdown-container3:hover .dropdown-content3 {
+  display: block
+}
+
+
+.dropbtn4 {
+background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+color: white;
+padding: 16px;
+font-size: 25px;
+border: none;
+cursor: pointer;
+width: 100%; /* Full-width */
+text-align: left; /* Align text */
+}
+
+/* Dropdown container */
+.dropdown-container4 {
+  display: block;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content4 {
+  display: none;
+  background: linear-gradient(to right, #0033cc 10%, #993399 60%);
+  padding-left: 20px;
+}
+
+.dropdown-container4:first-child {
+    border-top: 2px solid #ddd;
+}
+
+/* Show the dropdown content on hover */
+
+
+.dropdown-content4 a:hover {
+    background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+}
+
+
+
+/* Add a border to separate individual links if desired */
+.dropdown-content4 a:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Add a bottom border to all links except the last one */
+}
+
+/* Show the dropdown content on hover */
+.dropdown-container4:hover .dropdown-content4 {
+  display: block
+}
+
+.dropbtn5 {
+background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+color: white;
+padding: 16px;
+font-size: 25px;
+border: none;
+cursor: pointer;
+width: 100%; /* Full-width */
+text-align: left; /* Align text */
+}
+
+/* Dropdown container */
+.dropdown-container5 {
+  display: block;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content5 {
+  display: none;
+  background: linear-gradient(to right, #0033cc 10%, #993399 60%);
+  padding-left: 20px;
+}
+
+.dropdown-content5 a
+{
+    font-size:22px;
+}
+
+.dropdown-container5:first-child {
+    border-top: 2px solid #ddd;
+}
+
+/* Show the dropdown content on hover */
+
+
+.dropdown-content5 a:hover {
+    background: linear-gradient(to right, #0033cc 0%, #993399 100%); 
+}
+
+
+
+/* Add a border to separate individual links if desired */
+.dropdown-content5 a:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Add a bottom border to all links except the last one */
+}
+
+/* Show the dropdown content on hover */
+.dropdown-container5:hover .dropdown-content5 {
+  display: block
+}
+
+
+.dropbtn7 {
+background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+color: white;
+padding: 16px;
+font-size: 25px;
+border: none;
+cursor: pointer;
+width: 100%; /* Full-width */
+text-align: left; /* Align text */
+}
+
+/* Dropdown container */
+.dropdown-container7 {
+  display: block;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content7 {
+  display: none;
+  background: linear-gradient(to right, #0033cc 10%, #993399 60%);
+  padding-left: 20px;
+}
+
+.dropdown-content7 a
+{
+    font-size:22px;
+}
+
+.dropdown-container7:first-child {
+    border-top: 2px solid #ddd;
+}
+
+/* Show the dropdown content on hover */
+
+
+.dropdown-content7 a:hover {
+    background: linear-gradient(to right, #0033cc 0%, #993399 100%); 
+}
+
+
+
+/* Add a border to separate individual links if desired */
+.dropdown-content7 a:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Add a bottom border to all links except the last one */
+}
+
+/* Show the dropdown content on hover */
+.dropdown-container7:hover .dropdown-content7 {
+  display: block
+}
+
+
+
+/* Add this to your existing CSS */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content6 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content6 a {
+  background: linear-gradient(to right, #0033cc 10%, #993399 60%);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content6 a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content6 {display: block;}
+
+nav ul li a, .dropbtn6 {
+    padding: 10px; /* Makes the clickable area larger and adds some space around the text */
+    display: block; /* Allows the padding on <a> tags to take effect */
+    text-decoration: none; /* Removes underline from links */
+    
+}
+
+.dropdown-content6 a:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0; /* Light gray border for separation */
+}
+
+
+.mySlides {display:none;}
+.mySlides img {
+  width:100%;
+  height: 500px; /* Set a specific height */
+  object-fit: cover; /* Cover the container without distorting the image, might crop */
+  /* or use object-fit: contain; to ensure the whole image fits without cropping */
+}
+
+.mySlides2  {
+  width: 100%;
+  height: 500px; /* Set a specific height */
+  object-fit: cover;
+  object-position: top; /* Align the top part of the image with the container */
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body class="grad">
+
+    <nav style="height: 15%!important; display: flex; align-items: center; justify-content:start;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+        <div style="display: flex; align-items: center;">
+            
+            <span class="menu-icon" onclick="openNav()">&#9776;</span> <!-- Menu Icon -->
+            <img src="homelogo.png" alt="Logo" style="height: 50px; margin-right: 15px;">
+        </div>
+    
+        <div id="mySidenav" class="sidenav">
+            <img src="homelogo.png" alt="Menu Title" style="width: 100%; margin-bottom: 20px;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="dropdown-container2">
+                <button class="dropbtn2">Crime</button>
+                <div class="dropdown-content2">
+                    <a href="https://ksp.karnataka.gov.in/page/Crime/FIR+Cases/en" style="font-size:23px;">FIR Cases</a>
+                    <a href="https://ksp.karnataka.gov.in/page/Crime/UDR+Cases/en" style="font-size:23px;">UDR Cases</a>
+                    <a href="https://ksp.karnataka.gov.in/page/Crime/Petty+Cases/en" style="font-size:23px;">Petty Crimes</a>
+                    <a href="https://ksp.karnataka.gov.in/page/Crime/Crimes/en" style="font-size:23px;">Crimes</a>
+                    <a href="https://ksp.karnataka.gov.in/page/Crime/Cyber+Crime/en" style="font-size:23px;">Cyber Crime</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            
+            <div class="dropdown-container">
+                <button class="dropbtn">Women and Children</button>
+                <div class="dropdown-content">
+                    <a href="https://ksp.karnataka.gov.in/page/Women+and+Children/Crime+Against+Women/en">Crime Aganinst Women</a>
+                    <a href="https://ksp.karnataka.gov.in/page/Women+and+Children/Women+Safety/en">Women Safety</a>
+                    <a href="https://ksp.karnataka.gov.in/page/Women+and+Children/Child+Abuse/en">Child Abuse</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+
+            <div class="dropdown-container1">
+                <button class="dropbtn1">FAQ</button>
+                <div class="dropdown-content1">
+                    <a href="https://ksp.karnataka.gov.in/page/FAQ/Online+Police+Services/en">Online Police Services</a>
+                    <a href="https://ksp.karnataka.gov.in/page/FAQ/Traffic/en">Traffic</a>
+                    <a href="https://ksp.karnataka.gov.in/page/FAQ/Cybercrime/en">Cybercrime</a>
+                    <a href="https://ksp.karnataka.gov.in/page/FAQ/Women+and+Children/en">Women and Children</a>
+                    <a href="https://ksp.karnataka.gov.in/page/FAQ/Senior+Citizens/en">Senior Citizens</a>
+                    <a href="https://ksp.karnataka.gov.in/page/FAQ/Public+Nuisance/en">Public Nuisance</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+            
+
+            <div class="dropdown-container3">
+                <button class="dropbtn3">Traffic</button>
+                <div class="dropdown-content3">
+                    <a href="https://btp.gov.in/" style="font-size: 22px;">Bangalore Traffic Police</a>
+                
+                </div>
+            </div>
+
+            <div class="dropdown-container4">
+                <button class="dropbtn4">NCORD</button>
+                <div class="dropdown-content4">
+                    <a href="https://narcoordindia.in/index-english.php" style="font-size: 22px;">NCORD Portal</a>
+                
+                </div>
+            </div>
+
+            <div class="dropdown-container7">
+              <button class="dropbtn7">Training</button>
+              <div class="dropdown-content7">
+                  <a href="https://ksp.karnataka.gov.in/page/Training/Police+Training+Courses+and+Units/en" style="font-size: 22px;">Police Training Courses and Units</a>
+              
+              </div>
+          </div>
+
+
+            <div class="dropdown-container5">
+                <button class="dropbtn5">Citizen Desk</button>
+                <div class="dropdown-content5">
+                    <a href="https://ksp.karnataka.gov.in/info-3/%E0%B2%A8%E0%B3%87%E0%B2%AE%E0%B2%95%E0%B2%BE%E0%B2%A4%E0%B2%BF/en">Recruitment</a>
+                    <a href="https://ksp.karnataka.gov.in/firsearch/en">FIR Search</a>
+                    <a href="https://sevasindhu.karnataka.gov.in/Category/Police_Security_Services.html">Seva Sindhu</a>
+                    <a href="https://policeseva.ksp.gov.in/">Citizen Centric Portal</a>
+                    <a href="https://kspapp.in/ksp/api/elost-reports">KSP e-Lost Reports</a>
+                
+                </div>
+            </div>
+
+            
+            
+        </div>
+        
+        
+        
+        
+
+        <script>
+
+        AOS.init({
+                duration: 1000,
+                offset: 100, 
+                easing: 'ease-out', 
+            });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            //document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            //document.getElementById("main").style.marginLeft= "0";
+        }
+
+
+
+        // Get all the elements with the class "dropbtn"
+var dropdowns = document.getElementsByClassName("dropbtn");
+var i;
+
+for (i = 0; i < dropdowns.length; i++) {
+  dropdowns[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+
+var dropdowns1 = document.getElementsByClassName("dropbtn1");
+var j;
+
+for (j = 0; j < dropdowns1.length; j++) {
+  dropdowns1[j].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent1 = this.nextElementSibling;
+    if (dropdownContent1.style.display === "block") {
+      dropdownContent1.style.display = "none";
+    } else {
+      dropdownContent1.style.display = "block";
+    }
+  });
+}
+
+
+var dropdowns2 = document.getElementsByClassName("dropbtn2");
+var k;
+
+for (k = 0; k < dropdowns2.length; k++) {
+  dropdowns2[k].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent2 = this.nextElementSibling;
+    if (dropdownContent2.style.display === "block") {
+      dropdownContent2.style.display = "none";
+    } else {
+      dropdownContent2.style.display = "block";
+    }
+  });
+}
+
+var dropdowns3 = document.getElementsByClassName("dropbtn3");
+var l;
+
+for (l = 0; l < dropdowns3.length; l++) {
+  dropdowns3[l].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent3 = this.nextElementSibling;
+    if (dropdownContent3.style.display === "block") {
+      dropdownContent3.style.display = "none";
+    } else {
+      dropdownContent3.style.display = "block";
+    }
+  });
+}
+
+var dropdowns4 = document.getElementsByClassName("dropbtn4");
+var m;
+
+for (m = 0; m < dropdowns3.length; m++) {
+  dropdowns4[m].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent4 = this.nextElementSibling;
+    if (dropdownContent4.style.display === "block") {
+      dropdownContent4.style.display = "none";
+    } else {
+      dropdownContent4.style.display = "block";
+    }
+  });
+}
+
+
+var dropdowns5 = document.getElementsByClassName("dropbtn5");
+var n;
+
+for (n = 0; n < dropdowns3.length; n++) {
+  dropdowns5[n].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent5 = this.nextElementSibling;
+    if (dropdownContent5.style.display === "block") {
+      dropdownContent5.style.display = "none";
+    } else {
+      dropdownContent5.style.display = "block";
+    }
+  });
+}
+        
+var dropdowns7 = document.getElementsByClassName("dropbtn7");
+var p;
+
+for (p = 0; p < dropdowns7.length; p++) {
+  dropdowns7[n].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent7 = this.nextElementSibling;
+    if (dropdownContent7.style.display === "block") {
+      dropdownContent7.style.display = "none";
+    } else {
+      dropdownContent7.style.display = "block";
+    }
+  });
+}  
+        
+        
+        
+        
+        
+        
+        </script>
+
+
+    
+        <ul style="display: flex; margin-left:30px; list-style: none; margin: 0; font-size:18px;">
+            <li><a href="index2.html">Home</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn6">About Us</a>
+              <div class="dropdown-content6">
+                  <a href="https://ksp.karnataka.gov.in/page/About+Us/Vision+Statement/en">Vision Statement</a>
+                  <a href="https://ksp.karnataka.gov.in/page/About+Us/History/en">History</a>
+                  <a href="https://ksp.karnataka.gov.in/page/About+Us/Organization/en">Organization</a>
+                  <a href="https://ksp.karnataka.gov.in/page/About+Us/Organizational+Structure/en">Organizational Structure</a>
+              </div>
+          </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn6">Administration</a>
+              <div class="dropdown-content6">
+                  <a href="https://ksp.karnataka.gov.in/page/Administration/Recruitment/en">Recruitment</a>
+                  <a href="https://ksp.karnataka.gov.in/page/Administration/K+S+P+Strength/en">K S P Strength</a>
+                  <a href="https://ksp.karnataka.gov.in/page/Administration/Rewards/en">Rewards</a>
+                  <a href="https://ksp.karnataka.gov.in/page/Administration/Medals/en">Medals</a>
+                  <a href="https://ksp.karnataka.gov.in/page/Administration/Police+Welfare/en">Police Welfare</a>
+              </div>
+          </li>
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn6">RTI Dashboard</a>
+              <div class="dropdown-content6">
+                  <a href="https://ksp.karnataka.gov.in/login">RTI Login</a>
+                  <a href="https://ceg.karnataka.gov.in/assets/front/pdf/rti%20manual/RTI%20Manual%20English.pdf">RTI Manual</a>
+                  <a href="https://ksp.karnataka.gov.in/rtistats/en">RTI Statistics</a>
+                  
+              </div>
+          </li>
+          <li><a href="index.html">Analytical Dashboard</a></li>
+          <li><a href="https://ksp.karnataka.gov.in/kspmap/en">Police Units And Special Units</a></li>
+          <li><a href="https://ksp.karnataka.gov.in/page/Contact+Us/en">Contact Us</a></li>
+      </ul>
+            
+        </ul>
+    </nav>
+    
+
+    <div id="main" style="padding: 20px; padding-top: 100px;">
+      <div class="content-layout" style="display: flex; justify-content: space-between; align-items: flex-start;">    
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="card1" style="flex: 1; margin-right: 20px;  margin-top: -20px;">
+        <img src="dgp1.jpg" alt="DGP" style="width:100%">
+        <div class="container1">
+            <h4>Dr. Alok Mohan, IPS</h4> 
+            <p>_______________________________________________</p>
+            <p>Director General & Inspector General of Police</p> 
+        </div>
+      </div>
+     
+      <div class="w3-content w3-display-container"  style="flex: 2; margin-bottom:90px;">
+
+        <div class="w3-display-container mySlides">
+          <img src="slide1.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="w3-display-container mySlides">
+          <img src="slide2.jpg" class="mySlides2" style="width:100%"> 
+        </div>
+        
+        
+        <div class="w3-display-container mySlides">
+          <img src="slide3.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="w3-display-container mySlides">
+          <img src="slide4.jpg" style="width:100%">
+          
+        </div>
+        
+        <div class="w3-display-container mySlides">
+          <img src="slide5.jpg" style="width:100%">
+
+          
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="slide6.jpg" style="width:100%">
+
+          
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="slide7.jpg" style="width:100%">
+
+          
+        </div>
+
+        <div class="w3-display-container mySlides">
+          <img src="slide8.jpg" style="width:100%">
+
+          
+        </div>
+        
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+        
+        </div>
+        </div>
+        
+        <br>
+        <br>
+        
+        
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+<h1 style="text-align:center; font-size:40px;color:black;">Citizen Desk</h1>
+<div class="container mt-5">
+  <div class="row">
+      
+      <div class="col-md-4">
+        <a href="https://ksp.karnataka.gov.in/info-3/%E0%B2%A8%E0%B3%87%E0%B2%AE%E0%B2%95%E0%B2%BE%E0%B2%A4%E0%B2%BF/en" class="card-link3">
+          <div class="card3">
+              <div class="card-body3">
+                  <div class="card-content3">
+                      <div class="card-text3">
+                          Recruitment
+                      </div>
+                  </div>
+                  <img src="img1.png" alt="Logo">
+              </div>
+          </div>
+          </a>
+      </div>
+
+
+      <div class="col-md-4">
+        <a href="https://ksp.karnataka.gov.in/firsearch/en" class="card-link3">
+        <div class="card3">
+            <div class="card-body3">
+                <div class="card-content3">
+                    <div class="card-text3">
+                        FIR Search
+                    </div>
+                </div>
+                <img src="img2.png" alt="Logo">
+            </div>
+        </div>
+        </a>
+    </div>
+
+
+    <div class="col-md-4">
+      <a href="https://sevasindhu.karnataka.gov.in/Category/Police_Security_Services.html" class="card-link3">
+      <div class="card3">
+          <div class="card-body3">
+              <div class="card-content3">
+                  <div class="card-text3">
+                      Seva Sindhu
+                  </div>
+              </div>
+              <img src="img3.png" alt="Logo">
+          </div>
+      </div>
+      </a>
+  </div>
+
+
+  <div class="col-md-4">
+    <a href="https://policeseva.ksp.gov.in/" class="card-link3">
+    <div class="card3">
+        <div class="card-body3">
+            <div class="card-content3">
+                <div class="card-text3">
+                    Citizen Centric Portal
+                </div>
+            </div>
+            <img src="img4.png" alt="Logo">
+        </div>
+    </div>
+    </a>
+</div>
+
+
+<div class="col-md-4">
+  <a href="https://kspapp.in/ksp/api/elost-reports" class="card-link3">
+  <div class="card3">
+      <div class="card-body3">
+          <div class="card-content3">
+              <div class="card-text3">
+                  KSP e-Lost Reports
+              </div>
+          </div>
+          <img src="img5.png" alt="Logo">
+      </div>
+  </div>
+  </a>
+</div>
+
+<div class="col-md-4">
+  <a href="https://ksp.karnataka.gov.in/info-3/%E0%B2%9F%E0%B3%86%E0%B2%82%E0%B2%A1%E0%B2%B0%E0%B3%8D-%E0%B2%87+%E0%B2%B8%E0%B2%82%E0%B2%97%E0%B3%8D%E0%B2%B0%E0%B2%B9%E0%B2%A3%E0%B3%86-%E0%B2%9C%E0%B2%BF%E0%B2%87%E0%B2%8E%E0%B2%82/en" class="card-link3">
+<div class="card3">
+    <div class="card-body3">
+        <div class="card-content3">
+            <div class="card-text3" style="font-size: 22px;">
+                Tenders -e Procurement-GeM
+            </div>
+        </div>
+        <img src="img6.png" alt="Logo">
+    </div>
+</div>
+</a>
+</div>
+
+<div class="col-md-4">
+  <a href="https://ksp.karnataka.gov.in/info-3/%E0%B2%AE%E0%B2%BE%E0%B2%B9%E0%B2%BF%E0%B2%A4%E0%B2%BF+%E0%B2%B9%E0%B2%95%E0%B3%8D%E0%B2%95%E0%B3%81/en" class="card-link3">
+<div class="card3">
+    <div class="card-body3">
+        <div class="card-content3">
+            <div class="card-text3">
+                RTI
+            </div>
+        </div>
+        <img src="img7.png" alt="Logo">
+    </div>
+</div>
+</a>
+</div>
+
+
+<div class="col-md-4">
+  <a href="#" class="card-link3">
+<div class="card3">
+    <div class="card-body3">
+        <div class="card-content3">
+            <div class="card-text3">
+                Important Links
+            </div>
+        </div>
+        <img src="img8.png" alt="Logo">
+    </div>
+</div>
+</a>
+</div>
+
+<div class="col-md-4">
+  <a href="https://ksp.karnataka.gov.in/pslocator/en" class="card-link3">
+<div class="card3">
+    <div class="card-body3">
+        <div class="card-content3">
+            <div class="card-text3">
+                Police Station Locator
+            </div>
+        </div>
+        <img src="img9.png" alt="Logo">
+    </div>
+</div>
+</a>
+</div>
+      
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<br>
+<br>
+
+<div class="gtco-testimonials">
+  <h2></h2>
+  <div class="owl-carousel owl-carousel1 owl-theme">
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="IMPORTENT-WEBSITES.png" alt="">
+        <br>
+        <br> 
+        <div class="card-body">
+          <h5>Important Websites<br />
+          <br><br><br> </h5>
+            
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="ceg11.png" alt="">
+        <div class="card-body">
+          <h5>e-Governance Webistes<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="E-SERVICES.png" alt="">
+        <div class="card-body">
+          <h5>e-Service Webistes<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="STATISTICS-WEBSITES.png" alt="">
+        <div class="card-body">
+          <h5>Statistics Websites<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="MOBILE-APPS.png" alt="">
+        <div class="card-body">
+          <h5>Government Apps<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="CENTREL-GOVT-WEBSITES.png" alt="">
+        <div class="card-body">
+          <h5>Central Govt Websites<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="TECHNICLE-WEBSITES.png" alt="">
+        <div class="card-body">
+          <h5>Technical Websites<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="KANNADA-WEBSITES.png" alt="">
+        <div class="card-body">
+          <h5>Kannada Websites<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="COMMISSIONS.png" alt="">
+        <div class="card-body">
+          <h5>Commission<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="LAW-COURT.png" alt="">
+        <div class="card-body">
+          <h5>Law/Court<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="DOWNLOADS.png" alt="">
+        <div class="card-body">
+          <h5>Downloads<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="TOURIST-WEBSITE.png" alt="">
+        <div class="card-body">
+          <h5>Tourist Websites<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="GOVERNMENT-HOLLIDAY.png" alt="">
+        <div class="card-body">
+          <h5>Government Holidays<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card text-center"><img class="card-img-top" src="CONTACT-DIRECTORY.png" alt="">
+        <div class="card-body">
+          <h5>Govt Contact Manual<br />
+            <br><br><br> </h5>
+        </div>
+      </div>
+    </div>
+    <div>
+      
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script><script  src="./script.js"></script>
+
+
+
+        
+
+    
+
+    </div>
+
+
+
+    
+      
+  
+    
+    
+   
+    
+    
+    
+    
+
+   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        offset: 100, 
+        easing: 'ease-out', 
+    });
+       
+        document.addEventListener('DOMContentLoaded', function () {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                } else {
+                    entry.target.classList.remove('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        const elements = document.querySelectorAll('.card');
+        elements.forEach(element => observer.observe(element));
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("fade-in");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    document.querySelectorAll(".fade-in").forEach((card) => {
+      observer.observe(card);
+    });
+  });
+
+
+
+  let container = document.querySelector('.card-container');
+let cardWidth = document.querySelector('.card').clientWidth + 20; // Card width plus margin
+let scrollAmount = 0;
+
+document.querySelector('.right-btn').addEventListener('click', () => {
+    container.scrollLeft += cardWidth;
+    scrollAmount += cardWidth;
+    checkButtonVisibility();
+});
+
+document.querySelector('.left-btn').addEventListener('click', () => {
+    container.scrollLeft -= cardWidth;
+    scrollAmount -= cardWidth;
+    checkButtonVisibility();
+});
+
+function checkButtonVisibility() {
+    let maxScrollLeft = container.scrollWidth - container.clientWidth;
+    document.querySelector('.left-btn').style.display = scrollAmount > 0 ? 'block' : 'none';
+    document.querySelector('.right-btn').style.display = scrollAmount < maxScrollLeft ? 'block' : 'none';
+}
+
+checkButtonVisibility(); // Initial check
+
+
+</script>
+</body>
+
+</html>

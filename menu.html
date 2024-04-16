@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Line Cards</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .card3 {
+            margin-top: 20px;
+            border-radius: 20px; /* Curved edges */
+            width: 18rem; /* Adjusted smaller width */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for attractiveness */
+            position: relative; /* Needed for positioning the pseudo-element */
+            overflow: hidden; /* Ensures the gradient line adheres to the rounded corner */
+            height: 120px; /* Decreased height */
+        }
+
+        .card-content3 {
+            flex: 1;
+            display: flex;
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+        }
+
+        .card3::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px; /* Thickness of the gradient line */
+            background: linear-gradient(to right, #0033cc 0%, #993399 100%);
+            border-top-left-radius: 20px; /* Rounded corner */
+            border-top-right-radius: 20px; /* Rounded corner */
+        }
+
+        .card-body3 {
+            padding: 15px; /* Adjusted padding */
+            display: flex; /* Enables flexbox */
+            align-items: center; /* Vertically centers the flex items */
+            justify-content: space-between; /* Space between text and image */
+        }
+
+        .card3 img {
+            width: 70px; /* Adjusted size */
+            height: 70px; /* Adjusted size */
+        }
+
+        .card-text3 {
+            font-size:25px; /* Increased font size */
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Adjust text alignment as needed */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Card Example -->
+        <div class="col-md-4">
+            <div class="card3">
+                <div class="card-body3">
+                    <div class="card-content3">
+                        <div class="card-text3">
+                            Recruitment
+                        </div>
+                    </div>
+                    <img src="img1.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card3">
+              <div class="card-body3">
+                  <div class="card-content3">
+                      <div class="card-text3">
+                          FIR Search
+                      </div>
+                  </div>
+                  <img src="img2.png" alt="Logo">
+              </div>
+          </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card3">
+            <div class="card-body3">
+                <div class="card-content3">
+                    <div class="card-text3">
+                        Seva Sindhu
+                    </div>
+                </div>
+                <img src="img3.png" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <div class="card3">
+          <div class="card-body3">
+              <div class="card-content3">
+                  <div class="card-text3">
+                      Citizen Centric Portal
+                  </div>
+              </div>
+              <img src="img4.png" alt="Logo">
+          </div>
+      </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class="card3">
+        <div class="card-body3">
+            <div class="card-content3">
+                <div class="card-text3">
+                    KSP e-Lost Reports
+                </div>
+            </div>
+            <img src="img5.png" alt="Logo">
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card3">
+      <div class="card-body3">
+          <div class="card-content3">
+              <div class="card-text3" style="font-size: 22px;">
+                  Tenders -e Procurement-GeM
+              </div>
+          </div>
+          <img src="img6.png" alt="Logo">
+      </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card3">
+      <div class="card-body3">
+          <div class="card-content3">
+              <div class="card-text3">
+                  RTI
+              </div>
+          </div>
+          <img src="img7.png" alt="Logo">
+      </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card3">
+      <div class="card-body3">
+          <div class="card-content3">
+              <div class="card-text3">
+                  Important Links
+              </div>
+          </div>
+          <img src="img8.png" alt="Logo">
+      </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="card3">
+      <div class="card-body3">
+          <div class="card-content3">
+              <div class="card-text3">
+                  Police Station Locator
+              </div>
+          </div>
+          <img src="img9.png" alt="Logo">
+      </div>
+  </div>
+</div>
+        <!-- Repeat for more cards as needed -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
